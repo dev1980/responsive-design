@@ -1,0 +1,175 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Oswald:wght@600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$bg-dark:#2E323F;
+$bg-light:#3B4050;
+$bg-gray:#6F737F;
+$color-white:#FFFFFF;
+$color-grullo:#A59678;
+
+
+$font-oswald:'Oswald', sans-serif;
+$font-monts:'Montserrat', sans-serif;
+
+$padding1: 12px;
+.parent-grid {
+    display: grid;
+    grid-template-rows: auto auto auto 1fr auto;
+    height: 100vh;
+}
+
+.btn {
+    background-color: $color-grullo;
+    padding: 6px 12px;
+    border-radius: 33px;
+}
+
+header {
+    background-color: $bg-dark;
+    padding:$padding1;
+    color: $color-white;
+
+    h1 {
+        font-family: $font-oswald;
+        font-weight: 700;
+        font-size: 2rem;
+        margin-bottom: 12px;
+    }
+.nav__list {
+    list-style: none;
+    display: flex;
+    gap:24px;
+    
+}
+
+    .nav__link{
+        color: $color-white;
+        font-family: $font-oswald;
+        font-weight: 700;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+
+ 
+
+    @media(min-width:700px) {
+        .container {
+            width: 80%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .flex-box {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+}
+
+.hero {
+    padding:50px $padding1;
+    
+    background-color: $bg-light;
+    color: $color-white;
+
+    .hero__header {
+        font-family: $font-oswald;
+        font-weight: 700;
+        font-size: 4rem;
+        line-height: 4rem;
+    
+        span {
+            color: $color-grullo;
+        }
+    }
+
+    .hero__info {
+       margin-top: 20px;
+       p {
+        font-family: $font-monts;
+        font-weight: 400;
+        font-size: 1.2rem;
+        line-height: 1.4rem;
+        margin-top: 30px;
+        max-width: 500px;
+       }
+       .btn-lg{
+        border: none;
+        font-size: $font-oswald;
+        font-weight: 700;
+        color: $color-white;
+        font-size: 1.5rem;
+        display: inline-block;
+        margin-top: 30px;
+       }
+    }
+
+    @media(min-width: 700px){
+        .container {
+            width: 80%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .hero__header {
+            max-width: 600px;
+        }
+
+        .grid-box {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap:24px;
+        }
+    }
+}
+
+
+.second {
+    background-color: #ebe8e4;
+    padding: 50px $padding1;
+    color: black;
+
+    .col {
+        margin-bottom: 20px;
+
+    }
+
+    h2 {
+        color: $color-grullo;
+        font-family: $font-oswald;
+        font-size: 36px;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+    p {
+        font-family: $font-monts;
+        font-weight: 400;
+        line-height: 1.6;
+        max-width: 600px;
+    }
+
+    @media(min-width:700px) {
+        .container {
+            width: 80%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .flex-box {
+            display: flex;
+            gap: 24px;
+        }
+
+        .col {
+            text-align: center;
+        }
+    }
+}

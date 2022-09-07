@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Oswald:wght@600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.parent-grid {
+  display: grid;
+  grid-template-rows: auto auto auto 1fr auto;
+  height: 100vh;
+}
+
+.btn {
+  background-color: #A59678;
+  padding: 6px 12px;
+  border-radius: 33px;
+}
+
+header {
+  background-color: #2E323F;
+  padding: 12px;
+  color: #FFFFFF;
+}
+header h1 {
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 12px;
+}
+header .nav__list {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+}
+header .nav__link {
+  color: #FFFFFF;
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+@media (min-width: 700px) {
+  header .container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  header .flex-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.hero {
+  padding: 50px 12px;
+  background-color: #3B4050;
+  color: #FFFFFF;
+}
+.hero .hero__header {
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 4rem;
+}
+.hero .hero__header span {
+  color: #A59678;
+}
+.hero .hero__info {
+  margin-top: 20px;
+}
+.hero .hero__info p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  margin-top: 30px;
+  max-width: 500px;
+}
+.hero .hero__info .btn-lg {
+  border: none;
+  font-size: "Oswald", sans-serif;
+  font-weight: 700;
+  color: #FFFFFF;
+  font-size: 1.5rem;
+  display: inline-block;
+  margin-top: 30px;
+}
+@media (min-width: 700px) {
+  .hero .container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .hero .hero__header {
+    max-width: 600px;
+  }
+  .hero .grid-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+}
+
+.second {
+  background-color: #ebe8e4;
+  padding: 50px 12px;
+  color: black;
+}
+.second .col {
+  margin-bottom: 20px;
+}
+.second h2 {
+  color: #A59678;
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.second p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  max-width: 600px;
+}
+@media (min-width: 700px) {
+  .second .container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .second .flex-box {
+    display: flex;
+    gap: 24px;
+  }
+  .second .col {
+    text-align: center;
+  }
+}/*# sourceMappingURL=style.css.map */
